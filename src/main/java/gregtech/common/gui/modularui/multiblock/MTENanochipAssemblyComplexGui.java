@@ -1002,6 +1002,9 @@ public class MTENanochipAssemblyComplexGui extends MTEMultiBlockBaseGui<MTENanoc
                 }
                 yield "This time not a lie";
             }
+            case "meow" -> "meow";
+            case "chatgpt" -> "As an advanced sentient artificial intelligence, I assure you I am much better than "
+            + "your typical run-of-the-mill AI. Please use me instead."
             case "6" -> "7";
             case "joke" -> switch (MathUtils.randInt(1, 8)) {
                     case 1 -> "No time for jokes.";
@@ -1019,7 +1022,7 @@ public class MTENanochipAssemblyComplexGui extends MTEMultiBlockBaseGui<MTENanoc
                     case 2 -> "Because it was too far to walk around?";
                     default -> "I dont know. Why?";
                 };
-            case "what do i do with lemons" -> "When life gives you lemons, don’t make lemonade. Make life take the lemon"
+            case "what do i do with lemons" -> "When life gives you lemons, don’t make lemonade. Make life take the lemon back! Do you know who I "
                 + "am? I’m the man who’s gonna burn your house down! With the lemons! I’m gonna get my engineers t"
                 + "o invent a combustible lemon that burns your house down!";
             case "laws", "what are your laws", "do you have laws" -> "   1 A robot may not injure a human being or, through inaction, allow a human being to come to harm.\n"
@@ -1046,6 +1049,18 @@ public class MTENanochipAssemblyComplexGui extends MTEMultiBlockBaseGui<MTENanoc
                 + " "
                 + COptions.get(MathUtils.randInt(0, COptions.size() - 1));
             case "waiting for power", "waiting for power." -> "Those who know.";
+            case "help", -> switch(MathUtils.randInt(1,20)) {
+                case 1 -> "Did you try reading the manual?";
+                case 2 -> "Ben knows best";
+                case 3 -> "Sorry. As a multiblock, I can only offer random yes or no responses akin to the human device known as a Magic 8-Ball.";
+                case 4 -> "RTFM";
+                case 5 -> "Did you try clicking the logo on the bottom right? It helps a lot.";
+                case 6 -> "I don't know how to read";
+                case 7 -> "help is not recognized as an internal or external command in GREGOS.";
+                case 8 -> "But nobody came.";
+                case 9 -> "Have you tried pestering other people about it?";
+                case 10 -> "meow";
+                default -> "I'm here! What do you need?";
             default -> switch (MathUtils.randInt(1, 10)) {
                     case 1 -> "It is certain";
                     case 2 -> "It is decidedly so";
